@@ -7,6 +7,7 @@ import BuyCourse from './Components/BuyCourse';
 import HtmlSyllabus  from './Components/HtmlSyllabus';
 import Display from './Components/Display';
 import  Bonus from './Components/Bonus';
+import Roadmap from './Components/Roadmap';
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 me-1">
                   <Link to="/" className='page-link'><li className="nav-item nav-link">Home</li></Link>
                   <Link to="/technology" className='page-link'><li className="nav-item nav-link">Technology</li></Link>
-                  <Link to="/buy-course" className='page-link'><li className="nav-item nav-link">Buy Course</li></Link>
+                  <Link to="/roadmap" className='page-link'><li className="nav-item nav-link">Roadmap</li></Link>
+                  <Link to="/buy-course" className='page-link'><li className="nav-item nav-link">Enroll Now</li></Link>
                 </ul>  
             </div>
           </div>
@@ -36,14 +38,16 @@ function App() {
         <div className="container=fluid">
           <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/technology" element={<Technology/>} />
+            <Route path="/technology" element={<HtmlSyllabus/>} />
             <Route path="/buy-course" element={<BuyCourse/>} />
+            {/* <Route path="/technology" element={<HtmlSyllabus/>} /> */}
+            {/* <Route path="/syllabus" element={<HtmlSyllabus/>} />
             <Route path="/syllabus" element={<HtmlSyllabus/>} />
-            <Route path="/syllabus" element={<HtmlSyllabus/>} />
-            <Route path="/syllabus" element={<HtmlSyllabus/>} />
-            <Route path="/syllabus" element={<HtmlSyllabus/>} />
+            <Route path="/syllabus" element={<HtmlSyllabus/>} /> */}
             <Route path="/view-student" element={<Display/>} />
             <Route path="/bonus-reward" element={<Bonus/>} />
+            <Route path="/roadmap" element={<Roadmap/>} />
+
 
           </Routes>
           </div>

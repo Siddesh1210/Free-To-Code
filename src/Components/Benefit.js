@@ -3,12 +3,12 @@ function Benefit()
 {
     return(
         <div className="container-fluid">
-            <div className="row justify-content-evenly text-center bg-white">
+            <div className="row justify-content-center text-center bg-white">
                 <div className="col-md-12 pt-5 pb-3">
-                    <h2 className="benefit-text" data-aos="zoom-in" data-aos-delay="10" data-aos-duration="2000" data-aos-easing="ease-in-out">BENEFITS</h2>
+                    <h2 className="benefit-text">Benefits</h2>
                 </div>
             </div>
-            <div className="row justify-content-evenly bg-white pb-5 align-items-center benefit-row-div">
+            <div className="row justify-content-evenly bg-white pb-3 align-items-center benefit-row-div">
                 <div className="col-md-4">
                     <img src={hero} className="img-fluid"/>
                 </div>

@@ -15,7 +15,7 @@ function Technology()
         <div>
         <div className="pb-5 pt-5">
             <div className="technology-head">
-            <h2 className="tech-text" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000" data-aos-easing="ease-in-out">Technology We Will Cover</h2>
+            <h2 className="tech-text mt-5" data-aos="fade-up" data-aos-delay="50" data-aos-duration="2000" data-aos-easing="ease-in-out">Technology We Will Cover</h2>
             </div>
             <div className="technology-parent">
                 <div className="technology-child">

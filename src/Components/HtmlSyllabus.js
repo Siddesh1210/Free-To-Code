@@ -1,4 +1,5 @@
 import {useNavigate} from 'react-router-dom';
+import Footer from './Footer';
 function HtmlSyllabus()
 {
     const navigate=useNavigate();
@@ -7,6 +8,8 @@ function HtmlSyllabus()
         navigate('/bonus-reward');
     }
     return(
+        <div>
+            <h1 className='text-center mt-5 pt-5 technology-heading-text'>Technology You Will Learn</h1>
         <div className="Main-Parent-Div">
         <div className="html-div">
             <div className="syllabusImage">
@@ -75,6 +78,9 @@ function HtmlSyllabus()
             <hr></hr>
             <h5 className="text-center bonus-gift-text" onClick={bonusHandler}><i class="bi bi-gift"></i> - Bonus Gift</h5>
         </div>
+        </div>
+        <hr></hr>
+        <Footer/>
         </div>
     );
 }
