@@ -530,7 +530,8 @@ accordion-button:not(.collapsed)::after
 .payment-btn
 {
   padding:8px 24px;
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
+  background:linear-gradient(43deg,#4158d0 0%,#c850c0 46%,#ffcc70 100%);
   color:white;
   font-size:16px;
   cursor:pointer;
