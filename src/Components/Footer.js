@@ -6,7 +6,7 @@ function Footer()
             <div className='logo-class'>
             <img src={logo} className="logo-footer"/>
             </div>
-            <p className='footer-tagline' data-aos="zoom-in" data-aos-delay="10" data-aos-duration="2000" data-aos-easing="ease-in-out">Feel Free And Master Coding</p>
+            <p className='footer-tagline' data-aos="zoom-in" data-aos-duration="2000" data-aos-easing="ease-in-out">Feel Free And Master Coding</p>
             <h4 class="icon-footer">
             <a href="tel:9623235838" className="footer-links"><i class="bi bi-phone"></i></a> &nbsp; 
             <a href="https://wa.me/9623235838" className="footer-links"><i class="bi bi-whatsapp"></i></a> &nbsp; 

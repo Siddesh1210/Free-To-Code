@@ -1,5 +1,9 @@
 import {useNavigate} from 'react-router-dom';
 import Footer from './Footer';
+import hero1 from '../Images/Html_Img.webp';
+import hero2 from '../Images/CSS_Img.webp';
+import hero3 from '../Images/JS_Img.png';
+import hero4 from '../Images/Bootstrap_Img.png';
 function HtmlSyllabus()
 {
     const navigate=useNavigate();
@@ -13,7 +17,7 @@ function HtmlSyllabus()
         <div className="Main-Parent-Div">
         <div className="html-div">
             <div className="syllabusImage">
-                <img src="https://www.masterseosem.com/images/etiquetas-html.webp" className="imgSyllabus"/>
+                <img src={hero1} className="imgSyllabus"/>
             </div>
             <ul className="pt-3">
                 <li>Introduction to HTML</li>
@@ -30,7 +34,7 @@ function HtmlSyllabus()
 
         <div className="html-div">
             <div className="syllabusImage">
-                <img src="https://colorlib.com/wp/wp-content/uploads/sites/2/creative-css3-tutorials.jpg" className="imgSyllabus"/>
+                <img src={hero2} className="imgSyllabus"/>
             </div>
             <ul className="pt-3">
                 <li>Introduction to CSS </li>
@@ -47,7 +51,7 @@ function HtmlSyllabus()
 
         <div className="html-div">
             <div className="syllabusImage">
-                <img src="https://www.computerhope.com/jargon/j/javascript.png" className="imgSyllabus"/>
+                <img src={hero3} className="imgSyllabus"/>
             </div>
             <ul className="pt-3">
                 <li>Introduction to JS</li>
@@ -64,7 +68,7 @@ function HtmlSyllabus()
 
         <div className="html-div">
             <div className="syllabusImage">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png" className="imgSyllabus"/>
+                <img src={hero4} className="imgSyllabus"/>
             </div>
             <ul className="pt-3">
                 <li>Introduction to Bootstrap 5</li>

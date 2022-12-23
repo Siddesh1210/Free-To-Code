@@ -1,3 +1,12 @@
+import hero1 from '../Images/Git_icon.png';
+import hero2 from '../Images/Github_icon.png';
+import hero3 from '../Images/Html_icon.png';
+import hero4 from '../Images/Css_icon.png';
+import hero5 from '../Images/Js_icon.png';
+import hero6 from '../Images/Bootstrap_icon.webp';
+
+
+
 function Syllabus()
 {
     return(
@@ -6,12 +15,12 @@ function Syllabus()
                 <h1>Tools And Technology We Will Cover</h1>
             </div>
             <div className='parent-of-all-image'>
-                <div className="all-icon-image"><img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" className='child-icon-image'/></div>
-                <div className="all-icon-image"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJAVLo2lPcL9oGZqXUvPmN3l5tDUmdhEyPoI0lM2H-6XhhLTvadiDVO9abJvA0wc8oeBQ&usqp=CAU" className='child-icon-image'/></div>
-                <div className="all-icon-image"><img src="https://cdn-icons-png.flaticon.com/512/1216/1216733.png" className='child-icon-image'/></div>
-                <div className="all-icon-image"><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" className='child-icon-image'/></div>
-                <div className="all-icon-image"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" className='child-icon-image'/></div>
-                <div className="all-icon-image"><img src="https://www.saashub.com/images/app/service_logos/196/6ve3ytysvsem/large.png?1638255215" className='child-icon-image'/></div>
+                <div className="all-icon-image"><img src={hero1} className='child-icon-image'/></div>
+                <div className="all-icon-image"><img src={hero2} className='child-icon-image'/></div>
+                <div className="all-icon-image"><img src={hero3} className='child-icon-image'/></div>
+                <div className="all-icon-image"><img src={hero4} className='child-icon-image'/></div>
+                <div className="all-icon-image"><img src={hero5} className='child-icon-image'/></div>
+                <div className="all-icon-image"><img src={hero6} className='child-icon-image'/></div>
             </div>            
         </div>
     );

@@ -14,8 +14,8 @@ function Benefit()
                 </div>
                 <div className="col-md-5">
                     <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>1 Major Portfolio Project</h4>
-                    <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>CheatCode And Certificate</h4>
                     <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>100% Money Back Guarantee</h4>
+                    <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>LinkedIn Shareable Certificate</h4>
                     <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>Life Time Access to Recording</h4>
                     <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>30 Days Live Interactive Coding</h4>
                     <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>Access to 24/7 Discussion Group</h4>
