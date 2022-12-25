@@ -58,7 +58,7 @@ function HtmlSyllabus()
                 <li>JS Variable & Datatype</li>
                 <li>JS Array & Object</li>
                 <li>JS Functions & Control Structure</li>
-                <li>JS Map & Filter</li>
+                <li>JS Map, Filter & Events</li>
                 <li>JS DOM Manipulation</li>
                 <li>Form Validation Project</li>
             </ul>

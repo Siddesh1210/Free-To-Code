@@ -779,11 +779,6 @@ accordion-button:not(.collapsed)::after
 
 /* CourseCard css Start */
 
-/* .syllabus-parent-div
-{
-  width:100vw !important;
-  height: auto;
-} */
 
 .course-heading-about
 {
@@ -838,7 +833,7 @@ accordion-button:not(.collapsed)::after
   }
   .syllabus-heading
 {
-  margin-left:24px !important;
+  margin-left:12px !important;
 }
 
 }

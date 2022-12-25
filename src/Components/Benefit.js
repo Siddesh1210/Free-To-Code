@@ -19,7 +19,7 @@ function Benefit()
                     <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>Life Time Access to Recording</h4>
                     <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>30 Days Live Interactive Coding</h4>
                     <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>Access to 24/7 Discussion Group</h4>
-                    <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>Virtual Live Hackathon At The End</h4>
+                    <h4 className="benefits"><span className="benefit-span"><i class="bi bi-check2-circle"></i> </span>Virtual Live Hackathon at the End</h4>
                     
                     
                 </div>

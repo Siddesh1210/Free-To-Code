@@ -6,7 +6,7 @@ function Hero()
     const navigate=useNavigate();
     function submitHandler()
     {
-        navigate('/buy-course');
+        navigate('/enroll-for-course');
     }
     return(
         <div className="hero-container">

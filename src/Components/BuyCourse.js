@@ -1,5 +1,6 @@
 import {useRef} from 'react';
-import {ToastContainer,toast} from 'react-toastify';
+import {useNavigate} from 'react-router-dom';
+import { ToastContainer , toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 function BuyCourse()
 {
@@ -8,8 +9,33 @@ function BuyCourse()
     const phone_no=useRef(null);
     const whatsapp_no=useRef(null);
 
-    function submitHandler()
+    const navigate=useNavigate();
+    const loadScript = (src)=>
     {
+        return new Promise((resolve)=>
+        {
+            const script=document.createElement('script');
+            script.src=src;
+
+            script.onload=()=>{
+                resolve(true)
+            }
+
+            script.onerror=()=>{
+                resolve(false)
+            }
+
+            document.body.appendChild(script)
+        })
+    }
+    const paymentHandler = async(amount) =>{
+        const res=await loadScript('https://checkout.razorpay.com/v1/checkout.js')
+        if(!res)
+        {
+            alert('You are offline....failed to load Razorpay!!!');
+            return
+        }
+
         const username=nameInput.current.value;
         const useremail=emailInput.current.value;
         const phone_no_1=phone_no.current.value;
@@ -22,70 +48,40 @@ function BuyCourse()
             whatsapp_number:phone_no_2,
         }
 
-        if(username.length > 3 && useremail.length > 3 && phone_no_1>1111111111 && phone_no_2>1111111111)
+        if(username.length > 3 && useremail.length > 3 && phone_no_1 > 1111111111 && phone_no_2 > 1111111111)
         {
-
-        fetch('https://fewd-batch1-default-rtdb.firebaseio.com/user.json',{
+            fetch('https://fewd-batch1-default-rtdb.firebaseio.com/user.json',{
             method:'post',
             body:JSON.stringify(user)
-        }).then(()=>
-            {
-                toast.success('Registered Successfully',
-                {
-                    position:"top-center",
-                    autoclose:2000,
-                    hideProgressbar:true,
-                    closeOnClick:true,
-                });
-                window.location.replace('https://forms.gle/i2HFLssiXtck7n738');
-            }
-        )
+        })
+
+        const options={
+            key:"rzp_test_gqC5UcSxC3FOLN",
+            currency:"INR",
+            amount:amount*100,
+            name:"Free to Code",
+            description:"Payment for Frontend Course",
+
+            handler: function(response){
+                
+                alert("Thank you for your registeration...You will receive course confirmation mail within 24 hour.")
+                navigate('/');
+            },
+            
+        };
+            const paymentObject = new window.Razorpay(options)
+            paymentObject.open()
         }
 
-        else if (username.length < 3)
-        {
-            toast.error('Please enter proper name',
-                {
-                    position:"top-center",
-                    autoclose:5000,
-                    hideProgressbar:false,
-                    closeOnClick:true,
-                });
-        }
-
-        else if (useremail.length < 3)
-        {
-            toast.error('Please enter proper email',
-                {
-                    position:"top-center",
-                    autoclose:5000,
-                    hideProgressbar:false,
-                    closeOnClick:true,
-                });
-        }
-        else if (phone_no_1.length < 1111111111)
-        {
-            toast.error('Please enter proper input',
-                {
-                    position:"top-center",
-                    autoclose:5000,
-                    hideProgressbar:false,
-                    closeOnClick:true,
-                });
-        }
         else 
         {
-            toast.error('Please enter proper input',
-                {
-                    position:"top-center",
-                    autoclose:5000,
-                    hideProgressbar:false,
-                    closeOnClick:true,
-                });
-        }
-
+            // alert("Please enter all the input properly");
+            toast.error("Please enter all the input properly",
+            {
+                position:"top-center"
+            });
+        }   
     }
-
     return(
         <div className="container-fluid">
         <div className="row justify-content-center align-items-center mt-5 mb-3 d-flex">
@@ -108,7 +104,7 @@ function BuyCourse()
                     <label for="exampleInputPassword1" className="form-label">Whatsapp Number</label>
                     <input type="tel" className="form-control" maxLength={10} ref={whatsapp_no}/>
                 </div>
-                <button type="button" className="payment-btn" onClick={submitHandler}>Proceed for Payment</button>
+                <button type="button" className="payment-btn"  onClick={() => paymentHandler(499)} >Proceed for Payment</button>
                 <ToastContainer/>
             </form>
             </div>
