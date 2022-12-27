@@ -858,6 +858,15 @@ accordion-button:not(.collapsed)::after
 } */
 
 
+.payment-text
+{
+  color:rgb(255, 255, 255);
+}
+
+.razorpay-text
+{
+  color:blueviolet;
+}
 
 
 

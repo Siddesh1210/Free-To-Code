@@ -84,9 +84,10 @@ function BuyCourse()
     }
     return(
         <div className="container-fluid">
-        <div className="row justify-content-center align-items-center mt-5 mb-3 d-flex">
+        <div className="row justify-content-center align-items-center mt-5 mb-3 d-flex px-2">
             <div className="col-md-5 mt-5 text-white px-3 py-3 buy-form mx-2">
             <form>
+                
                 <div className="mb-3">
                     <label for="exampleInputEmail1" className="form-label">Name</label>
                     <input type="text" className="form-control" ref={nameInput}/>
@@ -105,6 +106,8 @@ function BuyCourse()
                     <input type="tel" className="form-control" maxLength={10} ref={whatsapp_no}/>
                 </div>
                 <button type="button" className="payment-btn"  onClick={() => paymentHandler(499)} >Proceed for Payment</button>
+                <hr></hr>
+                <p className='pt-2 text-center payment-text'>Integrated with India's most trusted payment partner - <span className='razorpay-text'>Razorpay</span></p>
                 <ToastContainer/>
             </form>
             </div>
