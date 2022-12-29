@@ -138,7 +138,7 @@ function BuyCourse()
                 </div>
                 <button type="button" className="payment-btn"  onClick={paymentPayuHandler} >Proceed for Payment</button>
                 <hr></hr>
-                <p className='pt-2 text-center payment-text'>Integrated with India's most trusted payment partner - <span className='razorpay-text'>PayU</span></p>
+                <p className='pt-2 text-center payment-text'>Integrated with India's leading and trusted payment gateway - <span className='razorpay-text'>PayU</span></p>
                 <ToastContainer/>
             </form>
             </div>
