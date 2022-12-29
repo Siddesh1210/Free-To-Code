@@ -20,7 +20,7 @@ function CourseCard()
             </div>
 
             <div className="col-md-5 my-auto">
-                <h2 className="text-justify syllabus-heading">FrontEnd Development Bootcamp</h2>
+                <h2 className="text-justify syllabus-heading">Frontend Development Bootcamp</h2>
                 <p className=" syllabus-heading syllabus-para">This certification bootcamp gives you an in-depth understanding of skills you need to become a  front-end developer. It gives you practical experience in html, css, javascript, bootstrap and more!
                 </p>
                 <div className="accordion syllabus-heading" id="accordionExample">

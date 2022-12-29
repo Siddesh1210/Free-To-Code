@@ -94,6 +94,19 @@ function QNA()
                     </div>
                     </div>
                 </div>
+
+                <div className="accordion-item">
+                    <h2 className="accordion-header" id="headingEight">
+                    <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        On which platform classes will be conducted?
+                    </button>
+                    </h2>
+                    <div id="collapseEight" className="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                    <div className="accordion-body">
+                    Classes will be conducted regularly live on <strong>Google meet.</strong>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
