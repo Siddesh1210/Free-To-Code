@@ -29,12 +29,10 @@ function BuyCourse()
                 method:'post',
                 body:JSON.stringify(user)
                 })
-                window.location.href='https://pmny.in/0I1jjXzTnN0H';
-                // window.open('https://pmny.in/MrcQKGXI6zhq')
+                window.location.href='https://pmny.in/vrAQxGPrgZFv';
             }
             else 
             {
-                // alert("Please enter all the input properly");
                 toast.error("Please enter all the input properly",
                 {
                     position:"top-center"
