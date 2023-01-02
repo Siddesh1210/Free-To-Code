@@ -43,7 +43,7 @@ function RegisterDisplay()
                 {
                     update.map((x)=>
                     {
-                        return <Structure name={x.name} email={x.email} p_no={x.phoneNumber}/>
+                        return <Structure name={x.name} email={x.email} p_no={x.phoneNumber} w_no={x.phoneNumber}/>
                     })
                 }
             </div>
