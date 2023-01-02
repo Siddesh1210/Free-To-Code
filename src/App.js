@@ -2,12 +2,13 @@ import './App.css';
 import logo from './Images/f2c_logo.png';
 import {Route,Routes,Link} from 'react-router-dom';
 import Home from './Components/Home';
-// import Technology from './Components/Technology';
 import BuyCourse from './Components/BuyCourse';
 import HtmlSyllabus  from './Components/HtmlSyllabus';
 import Display from './Components/Display';
 import  Bonus from './Components/Bonus';
 import Roadmap from './Components/Roadmap';
+import RegisterMasterclass from './Components/RegisterMasterclass';
+import RegisterDisplay from './Components/RegisterDisplay';
 // import {useState , useEffect} from 'react';
 
 function App() {
@@ -56,13 +57,16 @@ function App() {
             <Route path="/" element={<Home/>} />
             <Route path="/technology" element={<HtmlSyllabus/>} />
             <Route path="/enroll-for-course" element={<BuyCourse/>} />
-            {/* <Route path="/technology" element={<HtmlSyllabus/>} /> */}
             {/* <Route path="/syllabus" element={<HtmlSyllabus/>} />
             <Route path="/syllabus" element={<HtmlSyllabus/>} />
             <Route path="/syllabus" element={<HtmlSyllabus/>} /> */}
             <Route path="/view-student" element={<Display/>} />
             <Route path="/bonus-reward" element={<Bonus/>} />
             <Route path="/roadmap" element={<Roadmap/>} />
+            <Route path="/register" element={<RegisterMasterclass/>} />
+            <Route path="/register-user" element={<RegisterDisplay/>} />
+
+
 
 
           </Routes>
