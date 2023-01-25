@@ -13,7 +13,7 @@ function QNA()
                     </h2>
                     <div id="collapseOne" className="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div className="accordion-body">
-                        The Classes will be everyday live from <strong>9th January 2023 to 8th February* 2023</strong> and timing will be in <strong>evening 7pm-8pm.</strong>
+                        The Classes will be everyday live from <strong>20th February 2023 to 23rd March* 2023</strong> and timing will be in <strong>evening 7pm-8pm.</strong>
                     </div>
                     </div>
                 </div>

@@ -15,7 +15,7 @@ function CourseCard()
                 <img src="https://t3.ftcdn.net/jpg/03/18/60/62/360_F_318606217_Hk8jo2MVoI33SQOkYrfOF929J7JgIP0P.jpg" className="syllabus-card-image border-rounded"/>
                 <h4 className="pt-3 fw-light">FrontEnd Development Bootcamp<br></br><span className="course-price-text">Rs <del>2999/-</del> 499/-</span></h4>
 
-                <p>Start Date : 9th January 2023<br></br>Time : 7.00 PM to 8.00 PM</p>
+                <p>Start Date : 20th February 2023<br></br>Time : 7.00 PM to 8.00 PM</p>
                 <button className="register-btn" onClick={submitHandler}>Enroll Now</button>
             </div>
 
