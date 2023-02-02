@@ -19,8 +19,7 @@ function ShowPage()
                 users.push(user_detail);
                 setLoadStatus(false);
                 setUpdate(users);
-                
-            }
+            }console.log(update);
     })
     },[])
     return(

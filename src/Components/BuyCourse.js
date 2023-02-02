@@ -22,6 +22,7 @@ function BuyCourse()
                 phone_number:phone_no_1,
                 whatsapp_number:phone_no_2,
             }
+            // console.log(students);
     
             if(username.length > 3 && useremail.length > 3 && phone_no_1 > 1111111111 && phone_no_2 > 1111111111)
             {
@@ -29,6 +30,10 @@ function BuyCourse()
                 method:'post',
                 body:JSON.stringify(user)
                 })
+                // .then(()=>
+                // {
+                //     alert("Data added successfully")
+                // })
                 window.location.href='https://pmny.in/vrAQxGPrgZFv';
             }
             else 
